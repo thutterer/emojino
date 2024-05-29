@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Emojino</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/js/neutralino.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      x-data="{ showNotice: false }"
+      x-init="Neutralino.init()"
+    >
+      <emoji-picker
+        x-init="$el.shadowRoot.querySelector('#search').focus()"
+        @emoji-click="async (event) => {
+          await Neutralino.clipboard.writeText(event.detail.unicode);
+          showNotice = true;
+          setTimeout(() => showNotice = false, 1000)
+        }"
+      ></emoji-picker>
+      <div class="notice-container" x-cloak x-show="showNotice" x-transition>
+        <span class="notice">Copied</span>
+      </div>
+    </div>
+  </body>
+</html>

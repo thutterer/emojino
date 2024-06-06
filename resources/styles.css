@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgb(34, 34, 34);
+  background-color: transparent;
 }
 
 [x-cloak] {
@@ -28,4 +28,10 @@ emoji-picker {
     user-select: none;
     cursor: default;
   }
+}
+
+#drag-handle {
+  cursor: grab;
+  background-color: rgba(22, 22, 22, 0.75);
+  height: 24px;
 }

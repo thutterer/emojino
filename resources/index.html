@@ -21,6 +21,10 @@
       @keyup.escape.window="await Neutralino.app.exit()"
       @blur.window="await Neutralino.app.exit()"
     >
+      <div
+        id="drag-handle"
+        x-init="Neutralino.window.setDraggableRegion('drag-handle')"
+      ></div>
       <emoji-picker
         @emoji-click="async (event) => {
           await Neutralino.clipboard.writeText(event.detail.unicode);

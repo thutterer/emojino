@@ -26,6 +26,7 @@
         x-init="Neutralino.window.setDraggableRegion('drag-handle')"
       ></div>
       <emoji-picker
+        x-init="$el.shadowRoot.querySelector('#search').focus()"
         @emoji-click="async (event) => {
           await Neutralino.clipboard.writeText(event.detail.unicode);
           showNotice = true;

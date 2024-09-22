@@ -1,6 +1,3 @@
-# Developer tools' files
-.lite_workspace.lua
-
 # Neutralinojs binaries and builds
 /bin
 /dist
@@ -13,3 +10,9 @@ neutralino.d.ts
 .storage
 .tmp
 *.log
+
+# Assets from setup.sh
+alpine.js
+emoji-picker-element.js
+database.js
+picker.js

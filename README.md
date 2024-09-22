@@ -4,7 +4,7 @@ A simple emoji picker app for Linux. Built with [emoji-picker-element](https://g
 
 ## Logo
 
-https://emojipedia.org/twitter/twemoji-15.0.3/hot-beverage
+The logo is the ☕️ from [Twemoji](https://emojipedia.org/twitter/twemoji-15.0.3/hot-beverage).
 
 ## License
 

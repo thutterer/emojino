@@ -18,7 +18,6 @@
     <div
       x-data="{ showNotice: false }"
       x-init="Neutralino.init()"
-      @keyup.escape.window="await Neutralino.app.exit()"
     >
       <emoji-picker
         x-init="$el.shadowRoot.querySelector('#search').focus()"

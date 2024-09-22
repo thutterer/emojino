@@ -1,4 +1,4 @@
-# emojilino
+# emojino
 
 A simple emoji picker app, built with Neutralino.
 

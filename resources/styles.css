@@ -8,8 +8,8 @@ body {
 }
 
 emoji-picker {
-  width: 400px;
-  height: 300px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .notice-container {
@@ -30,8 +30,8 @@ emoji-picker {
   }
 }
 
-#drag-handle {
+/* #drag-handle {
   cursor: grab;
   background-color: rgba(22, 22, 22, 0.75);
   height: 24px;
-}
+} */

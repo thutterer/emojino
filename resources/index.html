@@ -19,12 +19,11 @@
       x-data="{ showNotice: false }"
       x-init="Neutralino.init()"
       @keyup.escape.window="await Neutralino.app.exit()"
-      @blur.window="await Neutralino.app.exit()"
     >
-      <div
+      <!-- <div
         id="drag-handle"
         x-init="Neutralino.window.setDraggableRegion('drag-handle')"
-      ></div>
+      ></div> -->
       <emoji-picker
         x-init="$el.shadowRoot.querySelector('#search').focus()"
         @emoji-click="async (event) => {

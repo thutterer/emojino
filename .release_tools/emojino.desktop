@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=emojino
+Icon=/usr/share/emojino/icon.png
+Exec=/usr/share/emojino/emojino-linux_x64
+Path=/usr/share/emojino
+Terminal=false
+Type=Application

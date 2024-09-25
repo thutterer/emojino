@@ -1,0 +1,5 @@
+Package: emojino
+Version: 1.3
+Maintainer: Thomas Hutterer
+Architecture: amd64
+Description: Emoji picker

@@ -32,7 +32,7 @@
       "hidden": false,
       "resizable": true,
       "transparent": false,
-      "exitProcessOnClose": true
+      "exitProcessOnClose": false
     }
   },
   "cli": {

@@ -10,7 +10,10 @@
   </head>
   <body>
     <div
-      x-data="{ showNotice: false }"
+      x-data="{
+        showNotice: false,
+        isDark: NL_ARGS ? NL_ARGS.some(str => str.includes('dark')) : false,
+      }"
       x-init="
         Neutralino.init()
 
@@ -22,6 +25,7 @@
       @keydown.escape.window="Neutralino.app.exit()"
     >
       <emoji-picker
+        :class="isDark ? 'dark' : 'light'"
         x-init="
           $el.shadowRoot.querySelector('#search').focus();
           Neutralino.window.setDraggableRegion($el.shadowRoot.querySelector('#skintone-button'));

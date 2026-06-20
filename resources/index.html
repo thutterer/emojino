@@ -22,7 +22,10 @@
       @keydown.escape.window="Neutralino.app.exit()"
     >
       <emoji-picker
-        x-init="$el.shadowRoot.querySelector('#search').focus()"
+        x-init="
+          $el.shadowRoot.querySelector('#search').focus();
+          Neutralino.window.setDraggableRegion($el.shadowRoot.querySelector('#skintone-button'));
+        "
         @emoji-click="async (event) => {
           await Neutralino.clipboard.writeText(event.detail.unicode);
           showNotice = true;
